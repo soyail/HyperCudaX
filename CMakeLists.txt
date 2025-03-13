@@ -22,7 +22,7 @@ option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 # 添加核心库
-set(SRC_FILES src/matmul.cu)
+set(SRC_FILES src/matmul.cu src/matmul_fp16.cu)
 
 
 if(BUILD_SHARED_LIBS)
